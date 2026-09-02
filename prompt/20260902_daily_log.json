@@ -1,0 +1,65 @@
+{
+  "session_date": "2026-09-02",
+  "project": "基于NLP的智能制造知识库问答系统",
+  "phase": "第4阶段 - 系统开发（知识库索引与问答API）",
+  "summary": "今日主要完成了Python环境配置、依赖安装、数据预处理脚本调试、知识库索引构建（BM25 + Sentence-BERT向量检索）以及Flask问答API的开发与测试。解决了pip不可用、网络无法访问Hugging Face（改用镜像）、curl命令在PowerShell中别名冲突等问题。最终成功启动API服务，并通过Invoke-RestMethod测试返回了检索结果。",
+  "topics": [
+    {
+      "topic": "Python环境安装与配置",
+      "user_question": "python --version 无输出，py --version 提示No installed Python found",
+      "assistant_response": "指导用户从python.org下载安装包，安装时务必勾选'Add Python to PATH'。安装过程中遇到长路径支持、py命令冲突、全局快捷键目录等交互选项，均建议选择推荐设置（y/N等）。",
+      "key_points": [
+        "下载官方Python安装包，勾选Add Python to PATH",
+        "安装成功后关闭终端重新打开，测试python --version",
+        "若pip不可用，使用python -m pip install"
+      ]
+    },
+    {
+      "topic": "依赖包安装",
+      "user_question": "pip install 报错 'pip' 不是可识别命令",
+      "assistant_response": "使用 python -m pip install 代替 pip install，安装所有必需的包：flask, pandas, numpy, scikit-learn, jieba, sentence-transformers, faiss-cpu, rank-bm25。",
+      "key_points": [
+        "python -m pip install 是通用做法",
+        "安装过程出现警告（Scripts目录不在PATH），可忽略",
+        "所有包成功安装"
+      ]
+    },
+    {
+      "topic": "构建知识库索引",
+      "user_question": "运行 build_index.py 报错无法打开文件",
+      "assistant_response": "用户未创建 build_index.py 文件，指导新建文件并粘贴完整代码。运行后遇到网络问题（连接 Hugging Face 超时），通过设置环境变量 HF_ENDPOINT=https://hf-mirror.com 解决，最终成功构建 BM25 和 FAISS 索引。",
+      "key_points": [
+        "创建 build_index.py 并写入代码",
+        "使用镜像站下载 Sentence-BERT 模型",
+        "生成 qa_index.faiss, bm25.pkl, qa_meta.pkl"
+      ]
+    },
+    {
+      "topic": "开发 Flask 问答 API",
+      "user_question": "运行 app.py 报错找不到文件",
+      "assistant_response": "同样需要新建 app.py 文件，提供完整的 Flask 应用代码，包含检索融合逻辑（向量+BM25 加权排序）和 /ask 路由。",
+      "key_points": [
+        "app.py 实现了多路召回和融合排序",
+        "启动后监听 0.0.0.0:5000",
+        "返回 JSON 格式的答案列表"
+      ]
+    },
+    {
+      "topic": "API 测试与调试",
+      "user_question": "使用 curl 命令测试返回 400 或 curl 报错",
+      "assistant_response": "PowerShell 中 curl 是 Invoke-WebRequest 别名，参数不同。建议使用 curl.exe 或 Invoke-RestMethod 进行测试。最终使用 Invoke-RestMethod 成功返回结果，但控制台显示中文乱码（不影响功能）。",
+      "key_points": [
+        "PowerShell 下用 curl.exe 或 Invoke-RestMethod",
+        "测试返回 results 数组，说明检索工作正常",
+        "可添加 app.config['JSON_AS_ASCII'] = False 解决乱码"
+      ]
+    }
+  ],
+  "pending_actions": [
+    "将今天对话总结为 JSON 并提交到 prompt/",
+    "编写前端界面（Vue3 或简单 HTML）调用 /ask 接口",
+    "准备答辩演示（PPT、流程说明）",
+    "可选：部署到云服务器"
+  ],
+  "next_planned_step": "根据方案设计，明天（9月3日）应完成前端页面搭建（问答页、知识库页、历史页、统计页），并与后端 API 联调。"
+}
