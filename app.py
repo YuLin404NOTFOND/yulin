@@ -1,3 +1,4 @@
+from flask_cors import CORS
 import json
 import pickle
 import jieba
@@ -7,7 +8,12 @@ from sentence_transformers import SentenceTransformer
 import faiss
 from rank_bm25 import BM25Okapi
 
+import os
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_HUB_OFFLINE"] = "1"
+
 app = Flask(__name__)
+CORS(app)
 
 # 加载索引和元数据
 print("加载索引...")
