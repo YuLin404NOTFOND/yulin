@@ -34,7 +34,7 @@ def init_db():
     ''')
     conn.commit()
     conn.close()
-    print(f"✅ 数据库初始化完成: {DB_PATH}")
+    print(f"[信息] 数据库初始化完成: {DB_PATH}")
 
 
 def insert_log(question, top_question, top_answer, score, latency_ms):

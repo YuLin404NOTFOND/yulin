@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+data/qa_system.db
+*.db
+.env
+.venv/
+venv/
+ppt_work/

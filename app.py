@@ -2,6 +2,11 @@
 智能制造知识库问答系统 - 后端服务
 基于 Flask 的 RESTful API，集成 BM25 + Faiss 多路召回
 """
+import os
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["HF_DATASETS_OFFLINE"] = "1"
+
 from flask_cors import CORS
 import json
 import pickle
@@ -16,11 +21,6 @@ import faiss
 from rank_bm25 import BM25Okapi
 
 from database import init_db, insert_log, get_history, get_stats
-
-import os
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
-os.environ["HF_HUB_OFFLINE"] = "1"
-
 
 def load_faiss_index_safe(index_path):
     """
@@ -54,7 +54,7 @@ with open('data/qa_meta.pkl', 'rb') as f:
     meta = pickle.load(f)
 questions = meta['questions']
 answers = meta['answers']
-print(f"✅ 索引加载完成，共 {len(questions)} 条问答对")
+print(f"[信息] 索引加载完成，共 {len(questions)} 条问答对")
 
 
 def retrieve(query, top_k=5):
@@ -145,7 +145,29 @@ def health():
 
 
 if __name__ == '__main__':
-    print("🚀 智能制造知识库问答系统启动中...")
-    print("📡 访问地址: http://127.0.0.1:5000")
-    print("📄 前端页面: 直接用浏览器打开 index.html")
-    app.run(debug=False, host='0.0.0.0', port=5000)
+    import socket
+    print("=" * 50)
+    print("  智能制造知识库问答系统 - 后端服务")
+    print("=" * 50)
+    print("[信息] 知识库条目数:", len(questions))
+    print("[信息] 后端API地址: http://127.0.0.1:5000")
+    print("[信息] 前端页面: 用浏览器打开 index.html")
+    print("[信息] 停止服务: 按 Ctrl+C 或关闭此窗口")
+    print("=" * 50)
+    print()
+
+    # 检查端口是否被占用
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex(('127.0.0.1', 5000))
+    sock.close()
+    if result == 0:
+        print("[警告] 端口5000已被占用，可能已有一个服务在运行")
+        print("[提示] 如果浏览器无法访问，请关闭其他占用5000端口的程序")
+        print()
+
+    try:
+        app.run(debug=False, host='0.0.0.0', port=5000)
+    except OSError as e:
+        print("[错误] 启动失败:", e)
+        print("[提示] 端口5000可能被占用，请关闭其他程序后重试")
+        input("按回车键退出...")
