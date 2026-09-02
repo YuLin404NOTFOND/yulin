@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智能制造知识库问答</title>
+  <!-- Element Plus 样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
+  <!-- Vue3 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <!-- Element Plus -->
+  <script src="https://unpkg.com/element-plus/dist/index.full.min.js"></script>
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #f5f7fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    #app {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      color: #303133;
+      font-weight: 300;
+    }
+    .header p {
+      color: #909399;
+    }
+    .search-box {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .search-box .el-input {
+      flex: 1;
+    }
+    .result-card {
+      margin-top: 20px;
+    }
+    .qa-item {
+      border-bottom: 1px solid #ebeef5;
+      padding: 16px 0;
+    }
+    .qa-item:last-child {
+      border-bottom: none;
+    }
+    .qa-item .question {
+      font-weight: 600;
+      color: #303133;
+      margin-bottom: 6px;
+    }
+    .qa-item .answer {
+      color: #606266;
+      line-height: 1.6;
+    }
+    .qa-item .score {
+      font-size: 12px;
+      color: #909399;
+      margin-top: 4px;
+    }
+    .empty-tip {
+      text-align: center;
+      color: #909399;
+      padding: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      <h1>🔧 智能制造知识库问答</h1>
+      <p>基于 NLP 的设备手册与故障知识智能检索</p>
+    </div>
+
+    <div class="search-box">
+      <el-input
+        v-model="question"
+        placeholder="请输入您的问题，例如：冷却系统有哪些类型？"
+        size="large"
+        @keyup.enter="handleAsk"
+        clearable
+      />
+      <el-button type="primary" size="large" @click="handleAsk" :loading="loading">
+        提问
+      </el-button>
+    </div>
+
+    <el-card class="result-card" shadow="never" v-if="results.length > 0">
+      <template #header>
+        <span style="font-weight:600;">检索结果（共 {{ results.length }} 条）</span>
+      </template>
+      <div v-for="(item, idx) in results" :key="idx" class="qa-item">
+        <div class="question">❓ {{ item.question }}</div>
+        <div class="answer">📌 {{ item.answer }}</div>
+        <div class="score">相似度得分：{{ item.score.toFixed(3) }}</div>
+      </div>
+    </el-card>
+
+    <div v-else-if="asked && results.length === 0" class="empty-tip">
+      ⚠️ 未找到相关问答，请尝试换个问题
+    </div>
+
+    <div v-else class="empty-tip">
+      💡 输入问题后点击“提问”或按回车键开始查询
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref, reactive, onMounted } = Vue;
+
+    const app = createApp({
+      setup() {
+        const question = ref('');
+        const results = ref([]);
+        const loading = ref(false);
+        const asked = ref(false);
+
+        const API_URL = 'http://127.0.0.1:5000/ask';
+
+        const handleAsk = async () => {
+          if (!question.value.trim()) {
+            ElementPlus.ElMessage.warning('请输入问题');
+            return;
+          }
+          loading.value = true;
+          asked.value = true;
+          try {
+            const response = await axios.post(API_URL, {
+              question: question.value.trim()
+            });
+            if (response.data && response.data.results) {
+              results.value = response.data.results;
+            } else {
+              results.value = [];
+            }
+          } catch (error) {
+            console.error(error);
+            ElementPlus.ElMessage.error('请求失败，请检查后端服务是否运行');
+            results.value = [];
+          } finally {
+            loading.value = false;
+          }
+        };
+
+        return {
+          question,
+          results,
+          loading,
+          asked,
+          handleAsk
+        };
+      }
+    });
+
+    app.use(ElementPlus);
+    app.mount('#app');
+  </script>
+</body>
+</html>
