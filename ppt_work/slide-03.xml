@@ -1,0 +1,80 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(255, 255, 255)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="50" width="800" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="26" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>研究背景与意义</p>
+      </content>
+    </shape>
+    <line startX="80" startY="105" endX="880" endY="105">
+      <border color="rgb(123, 37, 50)" width="2"/>
+    </line>
+
+    <shape type="text" topLeftX="80" topLeftY="125" width="380" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="17" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>研究背景：工业知识检索痛点</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="80" topLeftY="170" width="380" height="85">
+      <content textType="body" fontFamily="思源宋体" fontSize="13" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(123,37,50,1)">01 知识体量庞大</span></p>
+        <p>工业设备种类繁多，手册、维修指南、技术标准等知识体量呈指数级增长，人工查阅效率低下。</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="80" topLeftY="270" width="380" height="85">
+      <content textType="body" fontFamily="思源宋体" fontSize="13" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(123,37,50,1)">02 知识分散难统一</span></p>
+        <p>设备知识分散在手册、维修记录、技术公告等不同文档中，缺乏统一检索入口，查找特定信息耗时较长。</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="80" topLeftY="370" width="380" height="85">
+      <content textType="body" fontFamily="思源宋体" fontSize="13" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(123,37,50,1)">03 经验依赖程度高</span></p>
+        <p>故障诊断高度依赖资深工程师个人经验，知识难以传承复用，新员工培训成本高、上手周期长。</p>
+      </content>
+    </shape>
+
+    <line startX="480" startY="130" endX="480" endY="475">
+      <border color="rgb(210, 210, 210)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="520" topLeftY="125" width="380" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="17" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>研究意义：智能问答应用价值</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="520" topLeftY="170" width="380" height="85">
+      <content textType="body" fontFamily="思源宋体" fontSize="13" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(123,37,50,1)">01 提升检索效率</span></p>
+        <p>用户通过自然语言提问即可获取相关答案，将知识检索时间从分钟级压缩到秒级，提升生产运维效率。</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="520" topLeftY="270" width="380" height="85">
+      <content textType="body" fontFamily="思源宋体" fontSize="13" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(123,37,50,1)">02 统一知识入口</span></p>
+        <p>构建结构化领域知识库，将分散的设备手册、故障案例、技术参数统一管理，提供一站式知识查询服务。</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="520" topLeftY="370" width="380" height="85">
+      <content textType="body" fontFamily="思源宋体" fontSize="13" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(123,37,50,1)">03 降低经验门槛</span></p>
+        <p>将资深工程师的经验知识固化到知识库中，降低故障诊断对个人经验的依赖，加速新员工技能成长。</p>
+      </content>
+    </shape>
+  </data>
+  <note>
+    <content textType="body">
+      <p>首先看研究背景。随着智能制造发展，工业知识体量庞大且分散，故障诊断高度依赖个人经验，传统人工查阅方式效率低下。本项目的研究意义在于：通过智能问答系统提升知识检索效率，构建统一知识入口，降低经验门槛，为设备操作人员和维修工程师提供即时技术支持。</p>
+    </content>
+  </note>
+</slide>

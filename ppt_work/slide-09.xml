@@ -1,0 +1,91 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(255, 255, 255)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="50" width="800" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="26" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>总结与展望</p>
+      </content>
+    </shape>
+    <line startX="80" startY="105" endX="880" endY="105">
+      <border color="rgb(123, 37, 50)" width="2"/>
+    </line>
+
+    <shape type="text" topLeftX="80" topLeftY="125" width="800" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="17" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>项目成果总结</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="80" topLeftY="165" width="250" height="100">
+      <fill><fillColor color="rgba(123,37,50,0.08)"/></fill>
+    </shape>
+    <shape type="text" topLeftX="95" topLeftY="175" width="220" height="80">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(123,37,50,1)">完整B/S架构</span></p>
+        <p>前端Vue3界面 + Flask后端API + SQLite数据库 + 多路召回算法，四层架构完整可运行</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="355" topLeftY="165" width="250" height="100">
+      <fill><fillColor color="rgba(163,68,80,0.08)"/></fill>
+    </shape>
+    <shape type="text" topLeftX="370" topLeftY="175" width="220" height="80">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(163,68,80,1)">4个技术方向</span></p>
+        <p>覆盖Web前端、后端算法、自然语言处理、数据分析，满足课程至少3个方向要求</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="630" topLeftY="165" width="250" height="100">
+      <fill><fillColor color="rgba(180,150,130,0.1)"/></fill>
+    </shape>
+    <shape type="text" topLeftX="645" topLeftY="175" width="220" height="80">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(120,90,70,1)">工程化实践</span></p>
+        <p>1860条问答对、自动化测试、Git版本控制、完整文档，Vibe Coding全过程可追溯</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="80" topLeftY="290" width="380" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="16" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>创新点</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="80" topLeftY="325" width="380" height="150">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(50,50,50,1)" textAlign="left" lineSpacing="multiple:1.8">
+        <p><span bold="true" color="rgba(123,37,50,1)">01 多路召回融合策略：</span>BM25精确匹配与Faiss语义检索结合，RRF按排名融合，兼顾精确性与泛化能力</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">02 轻量级可演示架构：</span>CDN引入Vue3无需构建，Flask+SQLite零配置，便于课程演示和代码审查</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">03 完整工程化实践：</span>Vibe Coding全流程，任务拆解、约束说明、验收标准、自动化测试、Git版本控制</p>
+      </content>
+    </shape>
+
+    <line startX="490" startY="295" endX="490" endY="480">
+      <border color="rgb(210, 210, 210)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="520" topLeftY="290" width="380" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="16" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>不足与后续展望</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="520" topLeftY="315" width="380" height="165">
+      <content textType="body" fontFamily="思源宋体" fontSize="11" color="rgba(50,50,50,1)" textAlign="left" lineSpacing="multiple:1.7">
+        <p><span bold="true" color="rgba(163,68,80,1)">01 检索精度提升：</span>引入Cross-Encoder重排序模型，对召回结果精排，提升Top-1准确率</p>
+        <p><span bold="true" color="rgba(163,68,80,1)">02 生成式问答：</span>接入开源大模型，构建RAG架构，在检索基础上生成流畅自然的回答</p>
+        <p><span bold="true" color="rgba(163,68,80,1)">03 前端功能完善：</span>实现知识库管理、历史记录检索、统计图表可视化等完整多页面功能</p>
+        <p><span bold="true" color="rgba(163,68,80,1)">04 部署方式优化：</span>Docker容器化部署，或部署到云服务器提供在线访问服务</p>
+      </content>
+    </shape>
+  </data>
+  <note>
+    <content textType="body">
+      <p>最后进行总结与展望。本项目完成了完整的B/S架构智能制造知识库问答系统，覆盖4个课程技术方向，具备完整的工程化实践。创新点包括：BM25与Faiss多路召回融合策略、轻量级可演示架构、完整的Vibe Coding工程化实践。不足之处在于检索精度有限、缺少生成式问答、前端功能较简单、部署方式简单。后续可以从引入重排序模型、构建RAG生成式问答、完善前端多页面功能、Docker容器化部署四个方向进行改进。</p>
+    </content>
+  </note>
+</slide>

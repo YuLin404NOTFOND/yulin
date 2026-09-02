@@ -1,0 +1,134 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(255, 255, 255)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="50" width="800" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="26" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>数据资源构建</p>
+      </content>
+    </shape>
+    <line startX="80" startY="105" endX="880" endY="105">
+      <border color="rgb(123, 37, 50)" width="2"/>
+    </line>
+
+    <shape type="rect" topLeftX="80" topLeftY="130" width="340" height="160">
+      <fill>
+        <fillColor color="rgba(123,37,50,0.06)"/>
+      </fill>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="145" width="300" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="15" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>PANDAX工业QAE数据集</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="175" width="300" height="100">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(50,50,50,1)" textAlign="left" lineSpacing="multiple:1.6">
+        <p>首个开源工业问答与解释数据集</p>
+        <p>聚焦工业系统部分-整体、功能、参数三大主题</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">1860</span> 个QAE三元组</p>
+        <p>涵盖冷却系统、绿色技术等工业领域</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="80" topLeftY="310" width="340" height="170">
+      <fill>
+        <fillColor color="rgba(163,68,80,0.06)"/>
+      </fill>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="325" width="300" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="15" color="rgba(163,68,80,1)" textAlign="left" bold="true">
+        <p>SQLite数据库设计</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="355" width="300" height="110">
+      <content textType="body" fontFamily="思源宋体" fontSize="11" color="rgba(50,50,50,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p><span bold="true">qa_log表字段：</span></p>
+        <p>id / question / top_question</p>
+        <p>top_answer / score / latency_ms</p>
+        <p>created_at（自动时间戳）</p>
+        <p>支持日志插入、历史查询、统计分析</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="460" topLeftY="130" width="420" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="15" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>数据处理与索引构建流程</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="460" topLeftY="165" width="420" height="55">
+      <fill><fillColor color="rgba(123,37,50,0.1)"/></fill>
+      <border color="rgb(123, 37, 50)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="475" topLeftY="165" width="40" height="55">
+      <content textType="body" fontFamily="思源宋体" fontSize="20" color="rgba(123,37,50,1)" textAlign="center" verticalAlign="middle" bold="true"><p>1</p></content>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="170" width="350" height="45">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.4">
+        <p><span bold="true">数据预处理：</span>递归遍历JSON，提取所有Q/A对，文本清洗，输出processed_qa.json</p>
+      </content>
+    </shape>
+
+    <line startX="670" startY="220" endX="670" endY="235">
+      <border color="rgb(123, 37, 50)" width="2"/>
+      <endArrow type="arrow"/>
+    </line>
+
+    <shape type="rect" topLeftX="460" topLeftY="240" width="420" height="55">
+      <fill><fillColor color="rgba(163,68,80,0.1)"/></fill>
+      <border color="rgb(163, 68, 80)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="475" topLeftY="240" width="40" height="55">
+      <content textType="body" fontFamily="思源宋体" fontSize="20" color="rgba(163,68,80,1)" textAlign="center" verticalAlign="middle" bold="true"><p>2</p></content>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="245" width="350" height="45">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.4">
+        <p><span bold="true">BM25全文索引：</span>Jieba中文分词，构建倒排索引，pickle序列化保存bm25.pkl</p>
+      </content>
+    </shape>
+
+    <line startX="670" startY="295" endX="670" endY="310">
+      <border color="rgb(123, 37, 50)" width="2"/>
+      <endArrow type="arrow"/>
+    </line>
+
+    <shape type="rect" topLeftX="460" topLeftY="315" width="420" height="55">
+      <fill><fillColor color="rgba(180,150,130,0.12)"/></fill>
+      <border color="rgb(180, 150, 130)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="475" topLeftY="315" width="40" height="55">
+      <content textType="body" fontFamily="思源宋体" fontSize="20" color="rgba(120,90,70,1)" textAlign="center" verticalAlign="middle" bold="true"><p>3</p></content>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="320" width="350" height="45">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.4">
+        <p><span bold="true">Faiss向量索引：</span>Sentence-BERT编码384维向量，L2归一化，IndexFlatIP内积检索</p>
+      </content>
+    </shape>
+
+    <line startX="670" startY="370" endX="670" endY="385">
+      <border color="rgb(123, 37, 50)" width="2"/>
+      <endArrow type="arrow"/>
+    </line>
+
+    <shape type="rect" topLeftX="460" topLeftY="390" width="420" height="55">
+      <fill><fillColor color="rgba(123,37,50,0.15)"/></fill>
+      <border color="rgb(123, 37, 50)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="475" topLeftY="390" width="40" height="55">
+      <content textType="body" fontFamily="思源宋体" fontSize="20" color="rgba(123,37,50,1)" textAlign="center" verticalAlign="middle" bold="true"><p>4</p></content>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="395" width="350" height="45">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.4">
+        <p><span bold="true">元数据保存：</span>问答对列表保存qa_meta.pkl，数据库初始化创建qa_log表</p>
+      </content>
+    </shape>
+  </data>
+  <note>
+    <content textType="body">
+      <p>数据资源构建分为四个步骤。第一步数据预处理，递归遍历PANDAX数据集的嵌套JSON结构，提取1860条问答对并清洗文本。第二步构建BM25全文索引，使用Jieba中文分词后构建倒排索引。第三步构建Faiss向量索引，使用Sentence-BERT将问题编码为384维向量，建立内积相似度索引。第四步保存元数据并初始化SQLite数据库，创建qa_log表用于存储问答日志。</p>
+    </content>
+  </note>
+</slide>

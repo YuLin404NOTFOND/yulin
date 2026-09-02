@@ -1,0 +1,106 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(255, 255, 255)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="50" width="800" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="26" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>测试验证与AI使用披露</p>
+      </content>
+    </shape>
+    <line startX="80" startY="105" endX="880" endY="105">
+      <border color="rgb(123, 37, 50)" width="2"/>
+    </line>
+
+    <shape type="text" topLeftX="80" topLeftY="125" width="380" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="17" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>自动化测试</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="80" topLeftY="165" width="380" height="140">
+      <fill><fillColor color="rgba(123,37,50,0.06)"/></fill>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="175" width="340" height="120">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.7">
+        <p><span bold="true" color="rgba(123,37,50,1)">测试框架：</span>unittest，6大类25个用例</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">项目结构测试：</span>必要文件完整性检查</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">数据预处理测试：</span>1860条问答对结构验证</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">索引文件测试：</span>BM25/Faiss/元数据加载验证</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">数据库测试：</span>初始化/插入/查询/统计全流程</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">API接口测试：</span>4个路由定义与数据库集成</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="80" topLeftY="320" width="380" height="160">
+      <fill><fillColor color="rgba(163,68,80,0.06)"/></fill>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="330" width="340" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(163,68,80,1)" textAlign="left" bold="true">
+        <p>集成调试问题解决</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="360" width="340" height="110">
+      <content textType="body" fontFamily="思源宋体" fontSize="11" color="rgba(50,50,50,1)" textAlign="left" lineSpacing="multiple:1.6">
+        <p><span bold="true">01 模型加载超时：</span>设置离线模式，强制本地缓存</p>
+        <p><span bold="true">02 得分尺度不一致：</span>改用RRF按排名融合策略</p>
+        <p><span bold="true">03 Git合并冲突：</span>手动解决冲突，去除冲突标记</p>
+        <p><span bold="true">04 Faiss中文路径：</span>临时英文路径加载索引</p>
+      </content>
+    </shape>
+
+    <line startX="490" startY="130" endX="490" endY="480">
+      <border color="rgb(210, 210, 210)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="520" topLeftY="125" width="380" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="17" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>AI使用披露</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="520" topLeftY="165" width="360" height="70">
+      <fill><fillColor color="rgba(123,37,50,0.08)"/></fill>
+    </shape>
+    <shape type="text" topLeftX="540" topLeftY="175" width="320" height="50">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.5">
+        <p><span bold="true" color="rgba(123,37,50,1)">所用工具：</span>豆包AI编程助手、DeepSeek V4、Trae</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">代码占比：</span>约70%代码AI生成初稿，人工审查修改</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="520" topLeftY="250" width="360" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>关键Prompt策略</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="280" width="360" height="80">
+      <content textType="body" fontFamily="思源宋体" fontSize="11" color="rgba(50,50,50,1)" textAlign="left" lineSpacing="multiple:1.6">
+        <p><span bold="true">任务拆解：</span>复杂任务分解为独立子任务，明确输入输出</p>
+        <p><span bold="true">约束说明：</span>明确技术栈、架构约束、性能要求边界条件</p>
+        <p><span bold="true">上下文工程：</span>让AI先读现有代码再修改，避免破坏性改动</p>
+        <p><span bold="true">验收标准：</span>为每个子任务设定可量化的完成标准</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="520" topLeftY="370" width="360" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>AI出错案例与纠正</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="400" width="360" height="80">
+      <content textType="body" fontFamily="思源宋体" fontSize="11" color="rgba(50,50,50,1)" textAlign="left" lineSpacing="multiple:1.6">
+        <p><span bold="true">案例1：</span>预处理脚本假设JSON结构错误，改为递归遍历提取</p>
+        <p><span bold="true">案例2：</span>融合排序直接相加得分，改为RRF按排名融合</p>
+        <p><span bold="true">案例3：</span>数据库代码SQL注入风险，改为参数化查询</p>
+      </content>
+    </shape>
+  </data>
+  <note>
+    <content textType="body">
+      <p>测试方面，编写了unittest自动化测试脚本，覆盖项目结构、数据预处理、索引文件、数据库、API接口6大类共25个测试用例，全部通过。集成调试中解决了模型加载超时、得分尺度不一致、Git合并冲突、Faiss中文路径四个问题。AI使用方面，使用了豆包AI编程助手、DeepSeek V4和Trae，约70%代码由AI生成初稿后人工审查修改。关键Prompt策略包括任务拆解、约束说明、上下文工程和验收标准。同时披露了三个AI出错案例及纠正过程，所有AI生成代码均经过人工理解消化。</p>
+    </content>
+  </note>
+</slide>

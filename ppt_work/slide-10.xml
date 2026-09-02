@@ -1,0 +1,47 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(123, 37, 50)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="rect" topLeftX="0" topLeftY="0" width="960" height="540">
+      <fill>
+        <fillColor color="rgb(123, 37, 50)"/>
+      </fill>
+    </shape>
+
+    <shape type="text" topLeftX="0" topLeftY="180" width="960" height="80">
+      <content textType="title" fontFamily="思源宋体" fontSize="52" color="rgba(255,255,255,1)" textAlign="center" bold="true">
+        <p>感谢聆听</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="0" topLeftY="270" width="960" height="40">
+      <content textType="body" fontFamily="思源宋体" fontSize="20" color="rgba(212,184,168,1)" textAlign="center">
+        <p>恳请各位老师批评指正</p>
+      </content>
+    </shape>
+
+    <line startX="380" startY="340" endX="580" endY="340">
+      <border color="rgba(212,184,168,0.6)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="0" topLeftY="370" width="960" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(255,255,255,0.7)" textAlign="center">
+        <p>基于NLP的智能制造知识库问答系统</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="0" topLeftY="405" width="960" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(255,255,255,0.5)" textAlign="center">
+        <p>制造智能技术课程设计 · 2026年9月</p>
+      </content>
+    </shape>
+  </data>
+  <note>
+    <content textType="body">
+      <p>以上就是我的全部汇报内容。本项目构建了基于NLP的智能制造知识库问答系统，采用BM25与Faiss多路召回策略，实现了完整的B/S架构可运行demo。感谢各位老师的聆听，恳请批评指正，现在进入问答环节。</p>
+    </content>
+  </note>
+</slide>

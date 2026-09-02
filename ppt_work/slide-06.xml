@@ -1,0 +1,125 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(255, 255, 255)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="50" width="800" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="26" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>系统实现：前端与后端</p>
+      </content>
+    </shape>
+    <line startX="80" startY="105" endX="880" endY="105">
+      <border color="rgb(123, 37, 50)" width="2"/>
+    </line>
+
+    <shape type="text" topLeftX="80" topLeftY="125" width="380" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="17" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>前端实现</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="80" topLeftY="165" width="380" height="130">
+      <fill><fillColor color="rgba(123,37,50,0.06)"/></fill>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="175" width="340" height="110">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.6">
+        <p><span bold="true" color="rgba(123,37,50,1)">技术栈：</span>Vue3 + Element Plus + Axios</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">部署方式：</span>CDN引入，无需Node.js构建</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">界面特点：</span>对话式UI，知识卡片展示</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">交互功能：</span>回车快捷提问、加载状态、错误提示</p>
+        <p><span bold="true" color="rgba(123,37,50,1)">结果展示：</span>Top-5候选问答，相似度得分标注</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="80" topLeftY="310" width="380" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>页面规划</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="340" width="380" height="130">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(50,50,50,1)" textAlign="left" lineSpacing="multiple:1.7">
+        <p><span bold="true">问答页：</span>对话式界面，聊天气泡展示问答过程</p>
+        <p><span bold="true">知识库页：</span>文档列表、覆盖领域、统计信息</p>
+        <p><span bold="true">历史页：</span>时间线展示问答记录，关键词检索</p>
+        <p><span bold="true">统计页：</span>问答趋势、高频问题TOP榜、覆盖度</p>
+      </content>
+    </shape>
+
+    <line startX="490" startY="130" endX="490" endY="480">
+      <border color="rgb(210, 210, 210)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="520" topLeftY="125" width="380" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="17" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>后端实现</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="520" topLeftY="165" width="360" height="100">
+      <fill><fillColor color="rgba(163,68,80,0.06)"/></fill>
+    </shape>
+    <shape type="text" topLeftX="540" topLeftY="175" width="320" height="80">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(45,45,45,1)" textAlign="left" lineSpacing="multiple:1.6">
+        <p><span bold="true" color="rgba(163,68,80,1)">框架：</span>Python Flask + Flask-CORS</p>
+        <p><span bold="true" color="rgba(163,68,80,1)">架构：</span>RESTful API，JSON请求响应</p>
+        <p><span bold="true" color="rgba(163,68,80,1)">数据库：</span>SQLite，参数化查询防注入</p>
+        <p><span bold="true" color="rgba(163,68,80,1)">特性：</span>离线模型加载，中文路径兼容</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="520" topLeftY="280" width="360" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>API接口清单</p>
+      </content>
+    </shape>
+
+    <table topLeftX="520" topLeftY="310" width="360" height="160">
+      <colgroup>
+        <col width="90"/>
+        <col width="70"/>
+        <col width="200"/>
+      </colgroup>
+      <tr height="28">
+        <td>
+          <fill><fillColor color="rgba(123,37,50,1)"/></fill>
+          <content textType="body" fontSize="11" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>接口</p></content>
+        </td>
+        <td>
+          <fill><fillColor color="rgba(123,37,50,1)"/></fill>
+          <content textType="body" fontSize="11" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>方法</p></content>
+        </td>
+        <td>
+          <fill><fillColor color="rgba(123,37,50,1)"/></fill>
+          <content textType="body" fontSize="11" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>功能</p></content>
+        </td>
+      </tr>
+      <tr height="28">
+        <td><content textType="body" fontSize="10" textAlign="center"><p>/ask</p></content></td>
+        <td><content textType="body" fontSize="10" textAlign="center"><p>POST</p></content></td>
+        <td><content textType="body" fontSize="10" textAlign="left"><p>问答检索，返回Top-5结果</p></content></td>
+      </tr>
+      <tr height="28">
+        <td><content textType="body" fontSize="10" textAlign="center"><p>/stats</p></content></td>
+        <td><content textType="body" fontSize="10" textAlign="center"><p>GET</p></content></td>
+        <td><content textType="body" fontSize="10" textAlign="left"><p>系统统计，知识库与日志指标</p></content></td>
+      </tr>
+      <tr height="28">
+        <td><content textType="body" fontSize="10" textAlign="center"><p>/history</p></content></td>
+        <td><content textType="body" fontSize="10" textAlign="center"><p>GET</p></content></td>
+        <td><content textType="body" fontSize="10" textAlign="left"><p>历史问答记录，支持limit参数</p></content></td>
+      </tr>
+      <tr height="28">
+        <td><content textType="body" fontSize="10" textAlign="center"><p>/health</p></content></td>
+        <td><content textType="body" fontSize="10" textAlign="center"><p>GET</p></content></td>
+        <td><content textType="body" fontSize="10" textAlign="left"><p>健康检查，服务可用性检测</p></content></td>
+      </tr>
+    </table>
+  </data>
+  <note>
+    <content textType="body">
+      <p>前端使用Vue3和Element Plus，通过CDN引入无需构建环境，实现对话式问答界面，规划了问答、知识库、历史、统计四个页面。后端使用Python Flask提供RESTful API，包含/ask问答、/stats统计、/history历史、/health健康检查四个接口，集成SQLite数据库自动记录问答日志。每次提问都会将问题、Top1答案、得分和检索耗时写入数据库。</p>
+    </content>
+  </note>
+</slide>

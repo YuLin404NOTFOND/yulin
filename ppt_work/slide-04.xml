@@ -1,0 +1,143 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(255, 255, 255)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="50" width="800" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="26" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>系统架构与技术方向</p>
+      </content>
+    </shape>
+    <line startX="80" startY="105" endX="880" endY="105">
+      <border color="rgb(123, 37, 50)" width="2"/>
+    </line>
+
+    <shape type="rect" topLeftX="80" topLeftY="130" width="800" height="55">
+      <fill>
+        <fillColor color="rgba(123,37,50,0.08)"/>
+      </fill>
+    </shape>
+    <shape type="text" topLeftX="100" topLeftY="130" width="760" height="55">
+      <content textType="body" fontFamily="思源宋体" fontSize="15" color="rgba(45,45,45,1)" textAlign="left" verticalAlign="middle" lineSpacing="multiple:1.4">
+        <p><span bold="true" color="rgba(123,37,50,1)">B/S三层架构：</span>表现层（Vue3+Element Plus）→ 业务逻辑层（Python Flask）→ 数据层（SQLite+Faiss+BM25）</p>
+      </content>
+    </shape>
+
+    <shape type="rect" topLeftX="80" topLeftY="205" width="240" height="120">
+      <fill>
+        <fillColor color="rgba(123,37,50,0.12)"/>
+      </fill>
+      <border color="rgb(123, 37, 50)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="215" width="240" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(123,37,50,1)" textAlign="center" bold="true">
+        <p>表现层</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="90" topLeftY="245" width="220" height="70">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(60,60,60,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p>Vue3 + Element Plus</p>
+        <p>问答交互界面</p>
+        <p>知识卡片展示</p>
+      </content>
+    </shape>
+
+    <line startX="330" startY="265" endX="370" endY="265">
+      <border color="rgb(123, 37, 50)" width="2"/>
+      <endArrow type="arrow"/>
+    </line>
+
+    <shape type="rect" topLeftX="370" topLeftY="205" width="240" height="120">
+      <fill>
+        <fillColor color="rgba(163,68,80,0.12)"/>
+      </fill>
+      <border color="rgb(163, 68, 80)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="370" topLeftY="215" width="240" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(163,68,80,1)" textAlign="center" bold="true">
+        <p>业务逻辑层</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="380" topLeftY="245" width="220" height="70">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(60,60,60,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p>Python Flask RESTful API</p>
+        <p>问题理解 / 多路召回</p>
+        <p>融合排序 / 日志记录</p>
+      </content>
+    </shape>
+
+    <line startX="620" startY="265" endX="660" endY="265">
+      <border color="rgb(123, 37, 50)" width="2"/>
+      <endArrow type="arrow"/>
+    </line>
+
+    <shape type="rect" topLeftX="660" topLeftY="205" width="220" height="120">
+      <fill>
+        <fillColor color="rgba(212,184,168,0.2)"/>
+      </fill>
+      <border color="rgb(180, 150, 130)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="660" topLeftY="215" width="220" height="25">
+      <content textType="body" fontFamily="思源宋体" fontSize="14" color="rgba(120,90,70,1)" textAlign="center" bold="true">
+        <p>数据层</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="670" topLeftY="245" width="200" height="70">
+      <content textType="body" fontFamily="思源宋体" fontSize="12" color="rgba(60,60,60,1)" textAlign="left" lineSpacing="multiple:1.5">
+        <p>SQLite：问答日志</p>
+        <p>Faiss：向量索引</p>
+        <p>BM25：全文索引</p>
+      </content>
+    </shape>
+
+    <shape type="text" topLeftX="80" topLeftY="350" width="800" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="16" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>课程技术方向映射（覆盖4个方向）</p>
+      </content>
+    </shape>
+
+    <table topLeftX="80" topLeftY="390" width="800" height="110">
+      <colgroup>
+        <col width="60"/>
+        <col width="180"/>
+        <col width="560"/>
+      </colgroup>
+      <tr height="32">
+        <td>
+          <fill><fillColor color="rgba(123,37,50,1)"/></fill>
+          <content textType="body" fontSize="12" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>序号</p></content>
+        </td>
+        <td>
+          <fill><fillColor color="rgba(123,37,50,1)"/></fill>
+          <content textType="body" fontSize="12" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>技术方向</p></content>
+        </td>
+        <td>
+          <fill><fillColor color="rgba(123,37,50,1)"/></fill>
+          <content textType="body" fontSize="12" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>在系统中的实际作用</p></content>
+        </td>
+      </tr>
+      <tr height="26">
+        <td><content textType="body" fontSize="11" textAlign="center"><p>1</p></content></td>
+        <td><content textType="body" fontSize="11" textAlign="center"><p>Web前端开发</p></content></td>
+        <td><content textType="body" fontSize="11" textAlign="left"><p>Vue3框架构建问答交互界面，对话式UI、知识卡片展示、结果高亮</p></content></td>
+      </tr>
+      <tr height="26">
+        <td><content textType="body" fontSize="11" textAlign="center"><p>2</p></content></td>
+        <td><content textType="body" fontSize="11" textAlign="center"><p>后端开发与算法</p></content></td>
+        <td><content textType="body" fontSize="11" textAlign="left"><p>Python Flask搭建后端服务，RESTful API接口，集成NLP处理模块</p></content></td>
+      </tr>
+      <tr height="26">
+        <td><content textType="body" fontSize="11" textAlign="center"><p>3</p></content></td>
+        <td><content textType="body" fontSize="11" textAlign="center"><p>自然语言处理</p></content></td>
+        <td><content textType="body" fontSize="11" textAlign="left"><p>Jieba分词、Sentence-BERT向量化、BM25/Faiss相似度计算、多路召回融合排序</p></content></td>
+      </tr>
+    </table>
+  </data>
+  <note>
+    <content textType="body">
+      <p>系统采用B/S三层架构。表现层使用Vue3和Element Plus构建问答交互界面；业务逻辑层使用Python Flask提供RESTful API，负责问题理解、多路召回、融合排序和日志记录；数据层包括SQLite存储问答日志、Faiss存储向量索引、BM25存储全文索引。本项目覆盖了课程四个技术方向：Web前端开发、后端开发与算法、自然语言处理、数据分析与可视化。</p>
+    </content>
+  </note>
+</slide>

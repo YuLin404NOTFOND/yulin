@@ -1,0 +1,1232 @@
+<presentation id="V3EBs0LsflBk62d2U1bcjLyun7f" xmlns="https://www.larkoffice.com/sml/2.0" width="960" height="540">
+  <title>基于NLP的智能制造知识库问答系统-课程设计答辩</title>
+  <theme>
+    <textStyles>
+      <headline fontColor="rgba(31, 35, 41, 1)"/>
+      <sub-headline fontColor="rgba(31, 35, 41, 1)"/>
+      <body fontColor="rgba(31, 35, 41, 1)"/>
+      <caption fontColor="rgba(155, 158, 162, 1)" fontSize="14"/>
+    </textStyles>
+  </theme>
+  <slide id="pQQ">
+    <style>
+      <fill id="fQQ">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="380" height="540" topLeftX="0" topLeftY="0" presetHandlers="0" type="rect" id="bjB">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 1)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="300" height="160" topLeftX="40" topLeftY="160" type="text" id="bjH">
+        <content textType="title" fontSize="40" fontFamily="思源宋体" color="rgba(255, 255, 255, 1)" bold="true" lineSpacing="multiple:1.3" textAlign="left">
+          <p>基于NLP的</p>
+          <p>智能制造知识库</p>
+          <p>问答系统</p>
+        </content>
+      </shape>
+      <shape width="300" height="30" topLeftX="40" topLeftY="340" type="text" id="bjK">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(212, 184, 168, 1)" textAlign="left">
+          <p>课程设计答辩</p>
+        </content>
+      </shape>
+      <shape width="460" height="50" topLeftX="440" topLeftY="150" type="text" id="bjj">
+        <content textType="headline" fontSize="26" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>制造智能技术课程设计</p>
+        </content>
+      </shape>
+      <line id="bjl" startX="440" startY="215" endX="900.0010869552375" endY="215">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="460" height="80" topLeftX="440" topLeftY="240" type="text" id="bjt">
+        <content fontSize="16" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p>运用Vibe Coding方法开发面向制造场景的智能问答应用，</p>
+          <p>采用BM25与Faiss多路召回策略，实现工业知识的高效检索。</p>
+        </content>
+      </shape>
+      <shape width="460" height="100" topLeftX="440" topLeftY="380" type="text" id="bja">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(90, 90, 90, 1)" lineSpacing="multiple:1.8" textAlign="left">
+          <p>课程名称：制造智能技术</p>
+          <p>技术方向：Web前端 / 后端算法 / 自然语言处理 / 数据分析</p>
+          <p>答辩日期：2026年9月</p>
+        </content>
+      </shape>
+    </data>
+    <note id="bji">
+      <content>
+        <p>各位老师好，我汇报的题目是基于NLP的智能制造知识库问答系统。本项目是制造智能技术课程设计，运用Vibe Coding方法开发，采用BM25与Faiss多路召回策略，实现工业知识的高效检索与智能问答。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQR">
+    <style>
+      <fill id="fQR">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="200" height="50" topLeftX="80" topLeftY="55" type="text" id="bjx">
+        <content textType="title" fontSize="32" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>目录</p>
+        </content>
+      </shape>
+      <shape width="200" height="20" topLeftX="80" topLeftY="105" type="text" id="bjA">
+        <content textType="caption" fontSize="12" fontFamily="思源宋体" color="rgba(150, 150, 150, 1)" textAlign="left">
+          <p>CONTENTS</p>
+        </content>
+      </shape>
+      <line id="bjW" startX="80" startY="135" endX="880.0006249997559" endY="135">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="50" height="45" topLeftX="80" topLeftY="165" type="text" id="bjz">
+        <content textType="headline" fontSize="30" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>01</p>
+        </content>
+      </shape>
+      <shape width="320" height="30" topLeftX="140" topLeftY="165" type="text" id="bjN">
+        <content fontSize="18" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" bold="true" textAlign="left">
+          <p>研究背景与意义</p>
+        </content>
+      </shape>
+      <shape width="320" height="20" topLeftX="140" topLeftY="200" type="text" id="bjM">
+        <content textType="caption" fontSize="11" fontFamily="思源宋体" color="rgba(120, 120, 120, 1)" textAlign="left">
+          <p>工业知识检索痛点与智能问答应用价值</p>
+        </content>
+      </shape>
+      <line id="bjO" startX="80" startY="240" endX="460.0013157871956" endY="240">
+        <border color="rgba(220, 220, 220, 1)" width="1"/>
+      </line>
+      <shape width="50" height="45" topLeftX="80" topLeftY="265" type="text" id="bjC">
+        <content textType="headline" fontSize="30" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>02</p>
+        </content>
+      </shape>
+      <shape width="320" height="30" topLeftX="140" topLeftY="265" type="text" id="bjg">
+        <content fontSize="18" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" bold="true" textAlign="left">
+          <p>系统架构与技术方向</p>
+        </content>
+      </shape>
+      <shape width="320" height="20" topLeftX="140" topLeftY="300" type="text" id="bjb">
+        <content textType="caption" fontSize="11" fontFamily="思源宋体" color="rgba(120, 120, 120, 1)" textAlign="left">
+          <p>B/S三层架构与四个课程技术方向映射</p>
+        </content>
+      </shape>
+      <line id="bjn" startX="80" startY="340" endX="460.0013157871956" endY="340">
+        <border color="rgba(220, 220, 220, 1)" width="1"/>
+      </line>
+      <shape width="50" height="45" topLeftX="80" topLeftY="365" type="text" id="bjD">
+        <content textType="headline" fontSize="30" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>03</p>
+        </content>
+      </shape>
+      <shape width="320" height="30" topLeftX="140" topLeftY="365" type="text" id="bjh">
+        <content fontSize="18" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" bold="true" textAlign="left">
+          <p>数据资源构建</p>
+        </content>
+      </shape>
+      <shape width="320" height="20" topLeftX="140" topLeftY="400" type="text" id="bjs">
+        <content textType="caption" fontSize="11" fontFamily="思源宋体" color="rgba(120, 120, 120, 1)" textAlign="left">
+          <p>PANDAX数据集预处理与双索引构建</p>
+        </content>
+      </shape>
+      <line id="bjR" startX="80" startY="440" endX="460.0013157871956" endY="440">
+        <border color="rgba(220, 220, 220, 1)" width="1"/>
+      </line>
+      <shape width="50" height="45" topLeftX="500" topLeftY="165" type="text" id="bjS">
+        <content textType="headline" fontSize="30" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>04</p>
+        </content>
+      </shape>
+      <shape width="320" height="30" topLeftX="560" topLeftY="165" type="text" id="bje">
+        <content fontSize="18" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" bold="true" textAlign="left">
+          <p>系统实现</p>
+        </content>
+      </shape>
+      <shape width="320" height="20" topLeftX="560" topLeftY="200" type="text" id="bjX">
+        <content textType="caption" fontSize="11" fontFamily="思源宋体" color="rgba(120, 120, 120, 1)" textAlign="left">
+          <p>前端界面、后端API、数据库与多路召回算法</p>
+        </content>
+      </shape>
+      <line id="bjy" startX="500" startY="240" endX="880.0013157871956" endY="240">
+        <border color="rgba(220, 220, 220, 1)" width="1"/>
+      </line>
+      <shape width="50" height="45" topLeftX="500" topLeftY="265" type="text" id="bjL">
+        <content textType="headline" fontSize="30" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>05</p>
+        </content>
+      </shape>
+      <shape width="320" height="30" topLeftX="560" topLeftY="265" type="text" id="bjq">
+        <content fontSize="18" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" bold="true" textAlign="left">
+          <p>测试与AI使用披露</p>
+        </content>
+      </shape>
+      <shape width="320" height="20" topLeftX="560" topLeftY="300" type="text" id="bjP">
+        <content textType="caption" fontSize="11" fontFamily="思源宋体" color="rgba(120, 120, 120, 1)" textAlign="left">
+          <p>自动化测试结果与Vibe Coding实践披露</p>
+        </content>
+      </shape>
+      <line id="bjZ" startX="500" startY="340" endX="880.0013157871956" endY="340">
+        <border color="rgba(220, 220, 220, 1)" width="1"/>
+      </line>
+      <shape width="50" height="45" topLeftX="500" topLeftY="365" type="text" id="bjd">
+        <content textType="headline" fontSize="30" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>06</p>
+        </content>
+      </shape>
+      <shape width="320" height="30" topLeftX="560" topLeftY="365" type="text" id="bjU">
+        <content fontSize="18" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" bold="true" textAlign="left">
+          <p>总结与展望</p>
+        </content>
+      </shape>
+      <shape width="320" height="20" topLeftX="560" topLeftY="400" type="text" id="bjo">
+        <content textType="caption" fontSize="11" fontFamily="思源宋体" color="rgba(120, 120, 120, 1)" textAlign="left">
+          <p>项目成果总结、创新点与后续改进方向</p>
+        </content>
+      </shape>
+      <line id="bju" startX="500" startY="440" endX="880.0013157871956" endY="440">
+        <border color="rgba(220, 220, 220, 1)" width="1"/>
+      </line>
+    </data>
+    <note id="bjc">
+      <content>
+        <p>本次汇报共分为六个部分：首先介绍研究背景与意义，然后阐述系统架构与技术方向映射，接着说明数据资源构建过程，第四部分详细介绍系统实现，包括前端、后端、数据库和算法模块，第五部分展示测试结果并披露AI使用情况，最后进行总结与展望。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQO">
+    <style>
+      <fill id="fQO">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="800" height="45" topLeftX="80" topLeftY="50" type="text" id="bjI">
+        <content textType="headline" fontSize="26" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>研究背景与意义</p>
+        </content>
+      </shape>
+      <line id="bjQ" startX="80" startY="105" endX="880.0006249997559" endY="105">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="380" height="30" topLeftX="80" topLeftY="125" type="text" id="bjG">
+        <content fontSize="17" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>研究背景：工业知识检索痛点</p>
+        </content>
+      </shape>
+      <shape width="380" height="85" topLeftX="80" topLeftY="170" type="text" id="bjf">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">01 知识体量庞大</span></strong></p>
+          <p>工业设备种类繁多，手册、维修指南、技术标准等知识体量呈指数级增长，人工查阅效率低下。</p>
+        </content>
+      </shape>
+      <shape width="380" height="85" topLeftX="80" topLeftY="270" type="text" id="bjT">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">02 知识分散难统一</span></strong></p>
+          <p>设备知识分散在手册、维修记录、技术公告等不同文档中，缺乏统一检索入口，查找特定信息耗时较长。</p>
+        </content>
+      </shape>
+      <shape width="380" height="85" topLeftX="80" topLeftY="370" type="text" id="bjE">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">03 经验依赖程度高</span></strong></p>
+          <p>故障诊断高度依赖资深工程师个人经验，知识难以传承复用，新员工培训成本高、上手周期长。</p>
+        </content>
+      </shape>
+      <line id="bjm" startX="480" startY="130" endX="480.00000000000006" endY="475.00144927231827">
+        <border color="rgba(210, 210, 210, 1)" width="1"/>
+      </line>
+      <shape width="380" height="30" topLeftX="520" topLeftY="125" type="text" id="bjv">
+        <content fontSize="17" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>研究意义：智能问答应用价值</p>
+        </content>
+      </shape>
+      <shape width="380" height="85" topLeftX="520" topLeftY="170" type="text" id="bjw">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">01 提升检索效率</span></strong></p>
+          <p>用户通过自然语言提问即可获取相关答案，将知识检索时间从分钟级压缩到秒级，提升生产运维效率。</p>
+        </content>
+      </shape>
+      <shape width="380" height="85" topLeftX="520" topLeftY="270" type="text" id="bjJ">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">02 统一知识入口</span></strong></p>
+          <p>构建结构化领域知识库，将分散的设备手册、故障案例、技术参数统一管理，提供一站式知识查询服务。</p>
+        </content>
+      </shape>
+      <shape width="380" height="85" topLeftX="520" topLeftY="370" type="text" id="bjY">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">03 降低经验门槛</span></strong></p>
+          <p>将资深工程师的经验知识固化到知识库中，降低故障诊断对个人经验的依赖，加速新员工技能成长。</p>
+        </content>
+      </shape>
+    </data>
+    <note id="bjp">
+      <content>
+        <p>首先看研究背景。随着智能制造发展，工业知识体量庞大且分散，故障诊断高度依赖个人经验，传统人工查阅方式效率低下。本项目的研究意义在于：通过智能问答系统提升知识检索效率，构建统一知识入口，降低经验门槛，为设备操作人员和维修工程师提供即时技术支持。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQy">
+    <style>
+      <fill id="fQy">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="800" height="45" topLeftX="80" topLeftY="50" type="text" id="bim">
+        <content textType="headline" fontSize="26" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>系统架构与技术方向</p>
+        </content>
+      </shape>
+      <line id="biY" startX="80" startY="105" endX="880.0006249997559" endY="105">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="800" height="55" topLeftX="80" topLeftY="130" presetHandlers="0" type="rect" id="bil">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.08)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="760" height="55" topLeftX="100" topLeftY="130" type="text" id="biI">
+        <content fontSize="15" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" lineSpacing="multiple:1.4" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">B/S三层架构：</span></strong>表现层（Vue3+Element Plus）→ 业务逻辑层（Python Flask）→ 数据层（SQLite+Faiss+BM25）</p>
+        </content>
+      </shape>
+      <shape width="240" height="120" topLeftX="80" topLeftY="205" presetHandlers="0" type="rect" id="biT">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.12)"/>
+        </fill>
+        <border color="rgba(123, 37, 50, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="240" height="25" topLeftX="80" topLeftY="215" type="text" id="bii">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="center">
+          <p>表现层</p>
+        </content>
+      </shape>
+      <shape width="220" height="70" topLeftX="90" topLeftY="245" type="text" id="biE">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(60, 60, 60, 1)" textAlign="left">
+          <p>Vue3 + Element Plus</p>
+          <p>问答交互界面</p>
+          <p>知识卡片展示</p>
+        </content>
+      </shape>
+      <line id="biJ" startX="330" startY="265" endX="370.0124980474851" endY="265">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="240" height="120" topLeftX="370" topLeftY="205" presetHandlers="0" type="rect" id="bie">
+        <fill>
+          <fillColor color="rgba(163, 68, 80, 0.12)"/>
+        </fill>
+        <border color="rgba(163, 68, 80, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="240" height="25" topLeftX="370" topLeftY="215" type="text" id="bij">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(163, 68, 80, 1)" bold="true" textAlign="center">
+          <p>业务逻辑层</p>
+        </content>
+      </shape>
+      <shape width="220" height="70" topLeftX="380" topLeftY="245" type="text" id="bip">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(60, 60, 60, 1)" textAlign="left">
+          <p>Python Flask RESTful API</p>
+          <p>问题理解 / 多路召回</p>
+          <p>融合排序 / 日志记录</p>
+        </content>
+      </shape>
+      <line id="bif" startX="620" startY="265" endX="660.0124980474851" endY="265">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="220" height="120" topLeftX="660" topLeftY="205" presetHandlers="0" type="rect" id="biL">
+        <fill>
+          <fillColor color="rgba(212, 184, 168, 0.2)"/>
+        </fill>
+        <border color="rgba(180, 150, 130, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="220" height="25" topLeftX="660" topLeftY="215" type="text" id="bjV">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(120, 90, 70, 1)" bold="true" textAlign="center">
+          <p>数据层</p>
+        </content>
+      </shape>
+      <shape width="200" height="70" topLeftX="670" topLeftY="245" type="text" id="biK">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(60, 60, 60, 1)" textAlign="left">
+          <p>SQLite：问答日志</p>
+          <p>Faiss：向量索引</p>
+          <p>BM25：全文索引</p>
+        </content>
+      </shape>
+      <shape width="800" height="30" topLeftX="80" topLeftY="350" type="text" id="biw">
+        <content fontSize="16" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>课程技术方向映射（覆盖4个方向）</p>
+        </content>
+      </shape>
+      <table id="biZ" width="800" height="110" topLeftX="80" topLeftY="390">
+        <colgroup>
+          <col span="1" width="60"/>
+          <col span="1" width="180"/>
+          <col span="1" width="560"/>
+        </colgroup>
+        <tr height="32">
+          <td id="bjr">
+            <fill>
+              <fillColor color="rgba(123, 37, 50, 1)"/>
+            </fill>
+            <content fontSize="12" fontFamily="思源黑体" color="rgba(255, 255, 255, 1)" bold="true">
+              <p>序号</p>
+            </content>
+          </td>
+          <td id="bia">
+            <fill>
+              <fillColor color="rgba(123, 37, 50, 1)"/>
+            </fill>
+            <content fontSize="12" fontFamily="思源黑体" color="rgba(255, 255, 255, 1)" bold="true">
+              <p>技术方向</p>
+            </content>
+          </td>
+          <td id="biG">
+            <fill>
+              <fillColor color="rgba(123, 37, 50, 1)"/>
+            </fill>
+            <content fontSize="12" fontFamily="思源黑体" color="rgba(255, 255, 255, 1)" bold="true">
+              <p>在系统中的实际作用</p>
+            </content>
+          </td>
+        </tr>
+        <tr height="26">
+          <td id="bic">
+            <content fontSize="11" fontFamily="思源黑体">
+              <p>1</p>
+            </content>
+          </td>
+          <td id="bjF">
+            <content fontSize="11" fontFamily="思源黑体">
+              <p>Web前端开发</p>
+            </content>
+          </td>
+          <td id="biH">
+            <content fontSize="11" fontFamily="思源黑体" textAlign="left">
+              <p>Vue3框架构建问答交互界面，对话式UI、知识卡片展示、结果高亮</p>
+            </content>
+          </td>
+        </tr>
+        <tr height="26">
+          <td id="biv">
+            <content fontSize="11" fontFamily="思源黑体">
+              <p>2</p>
+            </content>
+          </td>
+          <td id="biz">
+            <content fontSize="11" fontFamily="思源黑体">
+              <p>后端开发与算法</p>
+            </content>
+          </td>
+          <td id="bjk">
+            <content fontSize="11" fontFamily="思源黑体" textAlign="left">
+              <p>Python Flask搭建后端服务，RESTful API接口，集成NLP处理模块</p>
+            </content>
+          </td>
+        </tr>
+        <tr height="26">
+          <td id="bit">
+            <content fontSize="11" fontFamily="思源黑体">
+              <p>3</p>
+            </content>
+          </td>
+          <td id="biQ">
+            <content fontSize="11" fontFamily="思源黑体">
+              <p>自然语言处理</p>
+            </content>
+          </td>
+          <td id="biC">
+            <content fontSize="11" fontFamily="思源黑体" textAlign="left">
+              <p>Jieba分词、Sentence-BERT向量化、BM25/Faiss相似度计算、多路召回融合排序</p>
+            </content>
+          </td>
+        </tr>
+      </table>
+    </data>
+    <note id="biB">
+      <content>
+        <p>系统采用B/S三层架构。表现层使用Vue3和Element Plus构建问答交互界面；业务逻辑层使用Python Flask提供RESTful API，负责问题理解、多路召回、融合排序和日志记录；数据层包括SQLite存储问答日志、Faiss存储向量索引、BM25存储全文索引。本项目覆盖了课程四个技术方向：Web前端开发、后端开发与算法、自然语言处理、数据分析与可视化。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQG">
+    <style>
+      <fill id="fQG">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="800" height="45" topLeftX="80" topLeftY="50" type="text" id="biX">
+        <content textType="headline" fontSize="26" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>数据资源构建</p>
+        </content>
+      </shape>
+      <line id="biM" startX="80" startY="105" endX="880.0006249997559" endY="105">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="340" height="160" topLeftX="80" topLeftY="130" presetHandlers="0" type="rect" id="biP">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.06)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="300" height="25" topLeftX="100" topLeftY="145" type="text" id="biO">
+        <content fontSize="15" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>PANDAX工业QAE数据集</p>
+        </content>
+      </shape>
+      <shape width="300" height="100" topLeftX="100" topLeftY="175" type="text" id="bik">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p>首个开源工业问答与解释数据集</p>
+          <p>聚焦工业系统部分-整体、功能、参数三大主题</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">1860</span></strong> 个QAE三元组</p>
+          <p>涵盖冷却系统、绿色技术等工业领域</p>
+        </content>
+      </shape>
+      <shape width="340" height="170" topLeftX="80" topLeftY="310" presetHandlers="0" type="rect" id="bin">
+        <fill>
+          <fillColor color="rgba(163, 68, 80, 0.06)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="300" height="25" topLeftX="100" topLeftY="325" type="text" id="bid">
+        <content fontSize="15" fontFamily="思源宋体" color="rgba(163, 68, 80, 1)" bold="true" textAlign="left">
+          <p>SQLite数据库设计</p>
+        </content>
+      </shape>
+      <shape width="300" height="110" topLeftX="100" topLeftY="355" type="text" id="bib">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" textAlign="left">
+          <p><strong>qa_log表字段：</strong></p>
+          <p>id / question / top_question</p>
+          <p>top_answer / score / latency_ms</p>
+          <p>created_at（自动时间戳）</p>
+          <p>支持日志插入、历史查询、统计分析</p>
+        </content>
+      </shape>
+      <shape width="420" height="25" topLeftX="460" topLeftY="130" type="text" id="biq">
+        <content fontSize="15" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>数据处理与索引构建流程</p>
+        </content>
+      </shape>
+      <shape width="420" height="55" topLeftX="460" topLeftY="165" presetHandlers="0" type="rect" id="bih">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.1)"/>
+        </fill>
+        <border color="rgba(123, 37, 50, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="40" height="55" topLeftX="475" topLeftY="165" type="text" id="biu">
+        <content fontSize="20" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="center">
+          <p>1</p>
+        </content>
+      </shape>
+      <shape width="350" height="45" topLeftX="520" topLeftY="170" type="text" id="bis">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" lineSpacing="multiple:1.4" textAlign="left">
+          <p><strong>数据预处理：</strong>递归遍历JSON，提取所有Q/A对，文本清洗，输出processed_qa.json</p>
+        </content>
+      </shape>
+      <line id="bix" startX="670" startY="220" endX="670" endY="235.0332963783729">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="420" height="55" topLeftX="460" topLeftY="240" presetHandlers="0" type="rect" id="biD">
+        <fill>
+          <fillColor color="rgba(163, 68, 80, 0.1)"/>
+        </fill>
+        <border color="rgba(163, 68, 80, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="40" height="55" topLeftX="475" topLeftY="240" type="text" id="biU">
+        <content fontSize="20" fontFamily="思源宋体" color="rgba(163, 68, 80, 1)" bold="true" textAlign="center">
+          <p>2</p>
+        </content>
+      </shape>
+      <shape width="350" height="45" topLeftX="520" topLeftY="245" type="text" id="biS">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" lineSpacing="multiple:1.4" textAlign="left">
+          <p><strong>BM25全文索引：</strong>Jieba中文分词，构建倒排索引，pickle序列化保存bm25.pkl</p>
+        </content>
+      </shape>
+      <line id="bio" startX="670" startY="295" endX="670" endY="310.0332963783729">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="420" height="55" topLeftX="460" topLeftY="315" presetHandlers="0" type="rect" id="bir">
+        <fill>
+          <fillColor color="rgba(180, 150, 130, 0.12)"/>
+        </fill>
+        <border color="rgba(180, 150, 130, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="40" height="55" topLeftX="475" topLeftY="315" type="text" id="biN">
+        <content fontSize="20" fontFamily="思源宋体" color="rgba(120, 90, 70, 1)" bold="true" textAlign="center">
+          <p>3</p>
+        </content>
+      </shape>
+      <shape width="350" height="45" topLeftX="520" topLeftY="320" type="text" id="biR">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" lineSpacing="multiple:1.4" textAlign="left">
+          <p><strong>Faiss向量索引：</strong>Sentence-BERT编码384维向量，L2归一化，IndexFlatIP内积检索</p>
+        </content>
+      </shape>
+      <line id="biA" startX="670" startY="370" endX="670" endY="385.0332963783729">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="420" height="55" topLeftX="460" topLeftY="390" presetHandlers="0" type="rect" id="biy">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.15)"/>
+        </fill>
+        <border color="rgba(123, 37, 50, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="40" height="55" topLeftX="475" topLeftY="390" type="text" id="biW">
+        <content fontSize="20" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="center">
+          <p>4</p>
+        </content>
+      </shape>
+      <shape width="350" height="45" topLeftX="520" topLeftY="395" type="text" id="biF">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" lineSpacing="multiple:1.4" textAlign="left">
+          <p><strong>元数据保存：</strong>问答对列表保存qa_meta.pkl，数据库初始化创建qa_log表</p>
+        </content>
+      </shape>
+    </data>
+    <note id="big">
+      <content>
+        <p>数据资源构建分为四个步骤。第一步数据预处理，递归遍历PANDAX数据集的嵌套JSON结构，提取1860条问答对并清洗文本。第二步构建BM25全文索引，使用Jieba中文分词后构建倒排索引。第三步构建Faiss向量索引，使用Sentence-BERT将问题编码为384维向量，建立内积相似度索引。第四步保存元数据并初始化SQLite数据库，创建qa_log表用于存储问答日志。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQs">
+    <style>
+      <fill id="fQs">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="800" height="45" topLeftX="80" topLeftY="50" type="text" id="bBi">
+        <content textType="headline" fontSize="26" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>系统实现：前端与后端</p>
+        </content>
+      </shape>
+      <line id="bBp" startX="80" startY="105" endX="880.0006249997559" endY="105">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="380" height="30" topLeftX="80" topLeftY="125" type="text" id="bBf">
+        <content fontSize="17" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>前端实现</p>
+        </content>
+      </shape>
+      <shape width="380" height="130" topLeftX="80" topLeftY="165" presetHandlers="0" type="rect" id="bBj">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.06)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="340" height="110" topLeftX="100" topLeftY="175" type="text" id="bBm">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">技术栈：</span></strong>Vue3 + Element Plus + Axios</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">部署方式：</span></strong>CDN引入，无需Node.js构建</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">界面特点：</span></strong>对话式UI，知识卡片展示</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">交互功能：</span></strong>回车快捷提问、加载状态、错误提示</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">结果展示：</span></strong>Top-5候选问答，相似度得分标注</p>
+        </content>
+      </shape>
+      <shape width="380" height="25" topLeftX="80" topLeftY="310" type="text" id="bBY">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>页面规划</p>
+        </content>
+      </shape>
+      <shape width="380" height="130" topLeftX="80" topLeftY="340" type="text" id="bBT">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.7" textAlign="left">
+          <p><strong>问答页：</strong>对话式界面，聊天气泡展示问答过程</p>
+          <p><strong>知识库页：</strong>文档列表、覆盖领域、统计信息</p>
+          <p><strong>历史页：</strong>时间线展示问答记录，关键词检索</p>
+          <p><strong>统计页：</strong>问答趋势、高频问题TOP榜、覆盖度</p>
+        </content>
+      </shape>
+      <line id="bBl" startX="490" startY="130" endX="490" endY="480.0014285685131">
+        <border color="rgba(210, 210, 210, 1)" width="1"/>
+      </line>
+      <shape width="380" height="30" topLeftX="520" topLeftY="125" type="text" id="bBB">
+        <content fontSize="17" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>后端实现</p>
+        </content>
+      </shape>
+      <shape width="360" height="100" topLeftX="520" topLeftY="165" presetHandlers="0" type="rect" id="bBI">
+        <fill>
+          <fillColor color="rgba(163, 68, 80, 0.06)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="320" height="80" topLeftX="540" topLeftY="175" type="text" id="bBz">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p><strong><span color="rgba(163, 68, 80, 1)">框架：</span></strong>Python Flask + Flask-CORS</p>
+          <p><strong><span color="rgba(163, 68, 80, 1)">架构：</span></strong>RESTful API，JSON请求响应</p>
+          <p><strong><span color="rgba(163, 68, 80, 1)">数据库：</span></strong>SQLite，参数化查询防注入</p>
+          <p><strong><span color="rgba(163, 68, 80, 1)">特性：</span></strong>离线模型加载，中文路径兼容</p>
+        </content>
+      </shape>
+      <shape width="360" height="25" topLeftX="520" topLeftY="280" type="text" id="blF">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>API接口清单</p>
+        </content>
+      </shape>
+      <table id="bBH" width="360" height="160" topLeftX="520" topLeftY="310">
+        <colgroup>
+          <col span="1" width="90"/>
+          <col span="1" width="70"/>
+          <col span="1" width="200"/>
+        </colgroup>
+        <tr height="32">
+          <td id="bBv">
+            <fill>
+              <fillColor color="rgba(123, 37, 50, 1)"/>
+            </fill>
+            <content fontSize="11" fontFamily="思源黑体" color="rgba(255, 255, 255, 1)" bold="true">
+              <p>接口</p>
+            </content>
+          </td>
+          <td id="bBt">
+            <fill>
+              <fillColor color="rgba(123, 37, 50, 1)"/>
+            </fill>
+            <content fontSize="11" fontFamily="思源黑体" color="rgba(255, 255, 255, 1)" bold="true">
+              <p>方法</p>
+            </content>
+          </td>
+          <td id="bBQ">
+            <fill>
+              <fillColor color="rgba(123, 37, 50, 1)"/>
+            </fill>
+            <content fontSize="11" fontFamily="思源黑体" color="rgba(255, 255, 255, 1)" bold="true">
+              <p>功能</p>
+            </content>
+          </td>
+        </tr>
+        <tr height="32">
+          <td id="bBC">
+            <content fontSize="10" fontFamily="思源黑体">
+              <p>/ask</p>
+            </content>
+          </td>
+          <td id="bBZ">
+            <content fontSize="10" fontFamily="思源黑体">
+              <p>POST</p>
+            </content>
+          </td>
+          <td id="blV">
+            <content fontSize="10" fontFamily="思源黑体" textAlign="left">
+              <p>问答检索，返回Top-5结果</p>
+            </content>
+          </td>
+        </tr>
+        <tr height="32">
+          <td id="bBK">
+            <content fontSize="10" fontFamily="思源黑体">
+              <p>/stats</p>
+            </content>
+          </td>
+          <td id="bBw">
+            <content fontSize="10" fontFamily="思源黑体">
+              <p>GET</p>
+            </content>
+          </td>
+          <td id="bBc">
+            <content fontSize="10" fontFamily="思源黑体" textAlign="left">
+              <p>系统统计，知识库与日志指标</p>
+            </content>
+          </td>
+        </tr>
+        <tr height="32">
+          <td id="blr">
+            <content fontSize="10" fontFamily="思源黑体">
+              <p>/history</p>
+            </content>
+          </td>
+          <td id="bBa">
+            <content fontSize="10" fontFamily="思源黑体">
+              <p>GET</p>
+            </content>
+          </td>
+          <td id="bBG">
+            <content fontSize="10" fontFamily="思源黑体" textAlign="left">
+              <p>历史问答记录，支持limit参数</p>
+            </content>
+          </td>
+        </tr>
+        <tr height="32">
+          <td id="bBE">
+            <content fontSize="10" fontFamily="思源黑体">
+              <p>/health</p>
+            </content>
+          </td>
+          <td id="bBJ">
+            <content fontSize="10" fontFamily="思源黑体">
+              <p>GET</p>
+            </content>
+          </td>
+          <td id="bBe">
+            <content fontSize="10" fontFamily="思源黑体" textAlign="left">
+              <p>健康检查，服务可用性检测</p>
+            </content>
+          </td>
+        </tr>
+      </table>
+    </data>
+    <note id="bBL">
+      <content>
+        <p>前端使用Vue3和Element Plus，通过CDN引入无需构建环境，实现对话式问答界面，规划了问答、知识库、历史、统计四个页面。后端使用Python Flask提供RESTful API，包含/ask问答、/stats统计、/history历史、/health健康检查四个接口，集成SQLite数据库自动记录问答日志。每次提问都会将问题、Top1答案、得分和检索耗时写入数据库。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQZ">
+    <style>
+      <fill id="fQZ">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="800" height="45" topLeftX="80" topLeftY="50" type="text" id="blh">
+        <content textType="headline" fontSize="26" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>核心算法：多路召回与融合排序</p>
+        </content>
+      </shape>
+      <line id="blc" startX="80" startY="105" endX="880.0006249997559" endY="105">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="140" height="60" topLeftX="80" topLeftY="130" presetHandlers="0" type="rect" id="bln">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.15)"/>
+        </fill>
+        <border color="rgba(123, 37, 50, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="140" height="60" topLeftX="80" topLeftY="130" type="text" id="blD">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" lineSpacing="multiple:1.3" textAlign="center">
+          <p>用户问题</p>
+          <p>自然语言输入</p>
+        </content>
+      </shape>
+      <line id="blS" startX="220" startY="160" endX="260.0124980474851" endY="160">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="140" height="60" topLeftX="260" topLeftY="130" presetHandlers="0" type="rect" id="blJ">
+        <fill>
+          <fillColor color="rgba(163, 68, 80, 0.15)"/>
+        </fill>
+        <border color="rgba(163, 68, 80, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="140" height="60" topLeftX="260" topLeftY="130" type="text" id="bls">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(163, 68, 80, 1)" bold="true" lineSpacing="multiple:1.3" textAlign="center">
+          <p>问题理解</p>
+          <p>Jieba中文分词</p>
+        </content>
+      </shape>
+      <line id="blA" startX="400" startY="160" endX="440.0124980474851" endY="160">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="160" height="45" topLeftX="440" topLeftY="120" presetHandlers="0" type="rect" id="blW">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.1)"/>
+        </fill>
+        <border color="rgba(123, 37, 50, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="160" height="45" topLeftX="440" topLeftY="120" type="text" id="blf">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="center">
+          <p>BM25全文检索</p>
+          <p>关键词精确匹配</p>
+        </content>
+      </shape>
+      <shape width="160" height="45" topLeftX="440" topLeftY="180" presetHandlers="0" type="rect" id="blN">
+        <fill>
+          <fillColor color="rgba(163, 68, 80, 0.1)"/>
+        </fill>
+        <border color="rgba(163, 68, 80, 1)" width="1"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="160" height="45" topLeftX="440" topLeftY="180" type="text" id="blM">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(163, 68, 80, 1)" bold="true" textAlign="center">
+          <p>Faiss向量检索</p>
+          <p>语义相似度匹配</p>
+        </content>
+      </shape>
+      <line id="blO" startX="600" startY="142" endX="640.0117629762872" endY="152.0029407440718">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <line id="blY" startX="600" startY="203" endX="640.0089877542983" endY="177.9943826535635">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="140" height="60" topLeftX="640" topLeftY="130" presetHandlers="0" type="rect" id="blg">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.2)"/>
+        </fill>
+        <border color="rgba(123, 37, 50, 1)"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="140" height="60" topLeftX="640" topLeftY="130" type="text" id="blq">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" lineSpacing="multiple:1.3" textAlign="center">
+          <p>融合排序</p>
+          <p>RRF按排名加权</p>
+        </content>
+      </shape>
+      <line id="blu" startX="780" startY="160" endX="820.0124980474851" endY="160">
+        <border color="rgba(123, 37, 50, 1)"/>
+        <endArrow type="arrow"/>
+      </line>
+      <shape width="60" height="60" topLeftX="820" topLeftY="130" presetHandlers="0" type="rect" id="blT">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.25)"/>
+        </fill>
+        <border color="rgba(123, 37, 50, 1)"/>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="60" height="60" topLeftX="820" topLeftY="130" type="text" id="bld">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" lineSpacing="multiple:1.2" textAlign="center">
+          <p>Top-5</p>
+          <p>结果</p>
+        </content>
+      </shape>
+      <shape width="800" height="30" topLeftX="80" topLeftY="250" type="text" id="blU">
+        <content fontSize="16" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>各模块技术细节</p>
+        </content>
+      </shape>
+      <shape width="190" height="180" topLeftX="80" topLeftY="290" presetHandlers="0" type="rect" id="blo">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.05)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="160" height="25" topLeftX="95" topLeftY="300" type="text" id="blz">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>问题理解模块</p>
+        </content>
+      </shape>
+      <shape width="160" height="130" topLeftX="95" topLeftY="330" type="text" id="blx">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p>Jieba中文分词</p>
+          <p>文本清洗与标准化</p>
+          <p>为BM25检索做准备</p>
+          <p>原始问题直接送入</p>
+          <p>Sentence-BERT编码</p>
+        </content>
+      </shape>
+      <shape width="190" height="180" topLeftX="285" topLeftY="290" presetHandlers="0" type="rect" id="blR">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.05)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="160" height="25" topLeftX="300" topLeftY="300" type="text" id="bly">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>BM25全文检索</p>
+        </content>
+      </shape>
+      <shape width="160" height="130" topLeftX="300" topLeftY="330" type="text" id="blC">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p>概率检索模型</p>
+          <p>TF-IDF词频权重</p>
+          <p>擅长关键词精确匹配</p>
+          <p>rank_bm25库实现</p>
+          <p>倒排索引pickle序列化</p>
+        </content>
+      </shape>
+      <shape width="190" height="180" topLeftX="490" topLeftY="290" presetHandlers="0" type="rect" id="ble">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.05)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="160" height="25" topLeftX="505" topLeftY="300" type="text" id="blX">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>Faiss向量检索</p>
+        </content>
+      </shape>
+      <shape width="160" height="130" topLeftX="505" topLeftY="330" type="text" id="blP">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p>Sentence-BERT编码</p>
+          <p>384维稠密向量</p>
+          <p>IndexFlatIP内积检索</p>
+          <p>L2归一化等价余弦</p>
+          <p>擅长语义相似度匹配</p>
+        </content>
+      </shape>
+      <shape width="185" height="180" topLeftX="695" topLeftY="290" presetHandlers="0" type="rect" id="blk">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.08)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="155" height="25" topLeftX="710" topLeftY="300" type="text" id="blZ">
+        <content fontSize="13" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>融合排序策略</p>
+        </content>
+      </shape>
+      <shape width="155" height="130" topLeftX="710" topLeftY="330" type="text" id="blL">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p>RRF倒数排名融合</p>
+          <p>按排名加权各0.5</p>
+          <p>避免得分尺度差异</p>
+          <p>两路交集权重叠加</p>
+          <p>取Top-5返回前端</p>
+        </content>
+      </shape>
+    </data>
+    <note id="blb">
+      <content>
+        <p>核心算法采用多路召回策略。用户问题首先经过Jieba中文分词进行问题理解，然后并行执行两路检索：BM25全文检索擅长关键词精确匹配，Faiss向量检索使用Sentence-BERT编码为384维向量，擅长语义相似度匹配。两路结果采用RRF倒数排名融合策略，按排名各加权0.5，避免得分尺度差异问题，最终取Top-5结果返回前端。这种融合策略兼顾了精确性与语义泛化能力。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQp">
+    <style>
+      <fill id="fQp">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="800" height="45" topLeftX="80" topLeftY="50" type="text" id="bla">
+        <content textType="headline" fontSize="26" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>测试验证与AI使用披露</p>
+        </content>
+      </shape>
+      <line id="blI" startX="80" startY="105" endX="880.0006249997559" endY="105">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="380" height="30" topLeftX="80" topLeftY="125" type="text" id="blG">
+        <content fontSize="17" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>自动化测试</p>
+        </content>
+      </shape>
+      <shape width="380" height="140" topLeftX="80" topLeftY="165" presetHandlers="0" type="rect" id="biV">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.06)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="340" height="120" topLeftX="100" topLeftY="175" type="text" id="blB">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" lineSpacing="multiple:1.7" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">测试框架：</span></strong>unittest，6大类25个用例</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">项目结构测试：</span></strong>必要文件完整性检查</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">数据预处理测试：</span></strong>1860条问答对结构验证</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">索引文件测试：</span></strong>BM25/Faiss/元数据加载验证</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">数据库测试：</span></strong>初始化/插入/查询/统计全流程</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">API接口测试：</span></strong>4个路由定义与数据库集成</p>
+        </content>
+      </shape>
+      <shape width="380" height="160" topLeftX="80" topLeftY="320" presetHandlers="0" type="rect" id="blK">
+        <fill>
+          <fillColor color="rgba(163, 68, 80, 0.06)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="340" height="25" topLeftX="100" topLeftY="330" type="text" id="blm">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(163, 68, 80, 1)" bold="true" textAlign="left">
+          <p>集成调试问题解决</p>
+        </content>
+      </shape>
+      <shape width="340" height="110" topLeftX="100" topLeftY="360" type="text" id="blw">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p><strong>01 模型加载超时：</strong>设置离线模式，强制本地缓存</p>
+          <p><strong>02 得分尺度不一致：</strong>改用RRF按排名融合策略</p>
+          <p><strong>03 Git合并冲突：</strong>手动解决冲突，去除冲突标记</p>
+          <p><strong>04 Faiss中文路径：</strong>临时英文路径加载索引</p>
+        </content>
+      </shape>
+      <line id="blj" startX="490" startY="130" endX="490" endY="480.0014285685131">
+        <border color="rgba(210, 210, 210, 1)" width="1"/>
+      </line>
+      <shape width="380" height="30" topLeftX="520" topLeftY="125" type="text" id="blt">
+        <content fontSize="17" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>AI使用披露</p>
+        </content>
+      </shape>
+      <shape width="360" height="70" topLeftX="520" topLeftY="165" presetHandlers="0" type="rect" id="blp">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.08)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="320" height="50" topLeftX="540" topLeftY="175" type="text" id="blQ">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">所用工具：</span></strong>豆包AI编程助手、DeepSeek V4、Trae</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">代码占比：</span></strong>约70%代码AI生成初稿，人工审查修改</p>
+        </content>
+      </shape>
+      <shape width="360" height="25" topLeftX="520" topLeftY="250" type="text" id="bli">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>关键Prompt策略</p>
+        </content>
+      </shape>
+      <shape width="360" height="80" topLeftX="520" topLeftY="280" type="text" id="blH">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p><strong>任务拆解：</strong>复杂任务分解为独立子任务，明确输入输出</p>
+          <p><strong>约束说明：</strong>明确技术栈、架构约束、性能要求边界条件</p>
+          <p><strong>上下文工程：</strong>让AI先读现有代码再修改，避免破坏性改动</p>
+          <p><strong>验收标准：</strong>为每个子任务设定可量化的完成标准</p>
+        </content>
+      </shape>
+      <shape width="360" height="25" topLeftX="520" topLeftY="370" type="text" id="blE">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>AI出错案例与纠正</p>
+        </content>
+      </shape>
+      <shape width="360" height="80" topLeftX="520" topLeftY="400" type="text" id="blv">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.6" textAlign="left">
+          <p><strong>案例1：</strong>预处理脚本假设JSON结构错误，改为递归遍历提取</p>
+          <p><strong>案例2：</strong>融合排序直接相加得分，改为RRF按排名融合</p>
+          <p><strong>案例3：</strong>数据库代码SQL注入风险，改为参数化查询</p>
+        </content>
+      </shape>
+    </data>
+    <note id="bll">
+      <content>
+        <p>测试方面，编写了unittest自动化测试脚本，覆盖项目结构、数据预处理、索引文件、数据库、API接口6大类共25个测试用例，全部通过。集成调试中解决了模型加载超时、得分尺度不一致、Git合并冲突、Faiss中文路径四个问题。AI使用方面，使用了豆包AI编程助手、DeepSeek V4和Trae，约70%代码由AI生成初稿后人工审查修改。关键Prompt策略包括任务拆解、约束说明、上下文工程和验收标准。同时披露了三个AI出错案例及纠正过程，所有AI生成代码均经过人工理解消化。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQK">
+    <style>
+      <fill id="fQK">
+        <fillColor color="rgba(255, 255, 255, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="800" height="45" topLeftX="80" topLeftY="50" type="text" id="bBd">
+        <content textType="headline" fontSize="26" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>总结与展望</p>
+        </content>
+      </shape>
+      <line id="bBb" startX="80" startY="105" endX="880.0006249997559" endY="105">
+        <border color="rgba(123, 37, 50, 1)"/>
+      </line>
+      <shape width="800" height="30" topLeftX="80" topLeftY="125" type="text" id="bBM">
+        <content fontSize="17" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>项目成果总结</p>
+        </content>
+      </shape>
+      <shape width="250" height="100" topLeftX="80" topLeftY="165" presetHandlers="0" type="rect" id="bBP">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 0.08)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="220" height="80" topLeftX="95" topLeftY="175" type="text" id="bBs">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">完整B/S架构</span></strong></p>
+          <p>前端Vue3界面 + Flask后端API + SQLite数据库 + 多路召回算法，四层架构完整可运行</p>
+        </content>
+      </shape>
+      <shape width="250" height="100" topLeftX="355" topLeftY="165" presetHandlers="0" type="rect" id="bBx">
+        <fill>
+          <fillColor color="rgba(163, 68, 80, 0.08)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="220" height="80" topLeftX="370" topLeftY="175" type="text" id="bBD">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(163, 68, 80, 1)">4个技术方向</span></strong></p>
+          <p>覆盖Web前端、后端算法、自然语言处理、数据分析，满足课程至少3个方向要求</p>
+        </content>
+      </shape>
+      <shape width="250" height="100" topLeftX="630" topLeftY="165" presetHandlers="0" type="rect" id="bBq">
+        <fill>
+          <fillColor color="rgba(180, 150, 130, 0.1)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="220" height="80" topLeftX="645" topLeftY="175" type="text" id="bBN">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(45, 45, 45, 1)" textAlign="left">
+          <p><strong><span color="rgba(120, 90, 70, 1)">工程化实践</span></strong></p>
+          <p>1860条问答对、自动化测试、Git版本控制、完整文档，Vibe Coding全过程可追溯</p>
+        </content>
+      </shape>
+      <shape width="380" height="30" topLeftX="80" topLeftY="290" type="text" id="bBR">
+        <content fontSize="16" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>创新点</p>
+        </content>
+      </shape>
+      <shape width="380" height="150" topLeftX="80" topLeftY="325" type="text" id="bBU">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.8" textAlign="left">
+          <p><strong><span color="rgba(123, 37, 50, 1)">01 多路召回融合策略：</span></strong>BM25精确匹配与Faiss语义检索结合，RRF按排名融合，兼顾精确性与泛化能力</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">02 轻量级可演示架构：</span></strong>CDN引入Vue3无需构建，Flask+SQLite零配置，便于课程演示和代码审查</p>
+          <p><strong><span color="rgba(123, 37, 50, 1)">03 完整工程化实践：</span></strong>Vibe Coding全流程，任务拆解、约束说明、验收标准、自动化测试、Git版本控制</p>
+        </content>
+      </shape>
+      <line id="bBg" startX="490" startY="295" endX="490" endY="480.00270268296083">
+        <border color="rgba(210, 210, 210, 1)" width="1"/>
+      </line>
+      <shape width="380" height="30" topLeftX="520" topLeftY="290" type="text" id="bBX">
+        <content fontSize="16" fontFamily="思源宋体" color="rgba(123, 37, 50, 1)" bold="true" textAlign="left">
+          <p>不足与后续展望</p>
+        </content>
+      </shape>
+      <shape width="380" height="165" topLeftX="520" topLeftY="315" type="text" id="bBA">
+        <content fontSize="11" fontFamily="思源宋体" color="rgba(50, 50, 50, 1)" lineSpacing="multiple:1.7" textAlign="left">
+          <p><strong><span color="rgba(163, 68, 80, 1)">01 检索精度提升：</span></strong>引入Cross-Encoder重排序模型，对召回结果精排，提升Top-1准确率</p>
+          <p><strong><span color="rgba(163, 68, 80, 1)">02 生成式问答：</span></strong>接入开源大模型，构建RAG架构，在检索基础上生成流畅自然的回答</p>
+          <p><strong><span color="rgba(163, 68, 80, 1)">03 前端功能完善：</span></strong>实现知识库管理、历史记录检索、统计图表可视化等完整多页面功能</p>
+          <p><strong><span color="rgba(163, 68, 80, 1)">04 部署方式优化：</span></strong>Docker容器化部署，或部署到云服务器提供在线访问服务</p>
+        </content>
+      </shape>
+    </data>
+    <note id="bBn">
+      <content>
+        <p>最后进行总结与展望。本项目完成了完整的B/S架构智能制造知识库问答系统，覆盖4个课程技术方向，具备完整的工程化实践。创新点包括：BM25与Faiss多路召回融合策略、轻量级可演示架构、完整的Vibe Coding工程化实践。不足之处在于检索精度有限、缺少生成式问答、前端功能较简单、部署方式简单。后续可以从引入重排序模型、构建RAG生成式问答、完善前端多页面功能、Docker容器化部署四个方向进行改进。</p>
+      </content>
+    </note>
+  </slide>
+  <slide id="pQv">
+    <style>
+      <fill id="fQv">
+        <fillColor color="rgba(123, 37, 50, 1)"/>
+      </fill>
+    </style>
+    <data>
+      <shape width="960" height="540" topLeftX="0" topLeftY="0" presetHandlers="0" type="rect" id="bBo">
+        <fill>
+          <fillColor color="rgba(123, 37, 50, 1)"/>
+        </fill>
+        <content fontSize="16" fontFamily="思源黑体" color="rgba(31, 35, 41, 1)"/>
+      </shape>
+      <shape width="960" height="80" topLeftX="0" topLeftY="180" type="text" id="bBS">
+        <content textType="title" fontSize="52" fontFamily="思源宋体" color="rgba(255, 255, 255, 1)" bold="true" textAlign="center">
+          <p>感谢聆听</p>
+        </content>
+      </shape>
+      <shape width="960" height="40" topLeftX="0" topLeftY="270" type="text" id="bBh">
+        <content fontSize="20" fontFamily="思源宋体" color="rgba(212, 184, 168, 1)" textAlign="center">
+          <p>恳请各位老师批评指正</p>
+        </content>
+      </shape>
+      <line id="bBW" startX="380" startY="340" endX="580.0024999843752" endY="340">
+        <border color="rgba(212, 184, 168, 0.6)" width="1"/>
+      </line>
+      <shape width="960" height="30" topLeftX="0" topLeftY="370" type="text" id="bBu">
+        <content fontSize="14" fontFamily="思源宋体" color="rgba(255, 255, 255, 0.702)" textAlign="center">
+          <p>基于NLP的智能制造知识库问答系统</p>
+        </content>
+      </shape>
+      <shape width="960" height="25" topLeftX="0" topLeftY="405" type="text" id="bBy">
+        <content fontSize="12" fontFamily="思源宋体" color="rgba(255, 255, 255, 0.502)" textAlign="center">
+          <p>制造智能技术课程设计 · 2026年9月</p>
+        </content>
+      </shape>
+    </data>
+    <note id="bBO">
+      <content>
+        <p>以上就是我的全部汇报内容。本项目构建了基于NLP的智能制造知识库问答系统，采用BM25与Faiss多路召回策略，实现了完整的B/S架构可运行demo。感谢各位老师的聆听，恳请批评指正，现在进入问答环节。</p>
+      </content>
+    </note>
+  </slide>
+</presentation>

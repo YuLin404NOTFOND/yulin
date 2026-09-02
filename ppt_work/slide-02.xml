@@ -1,0 +1,141 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(255, 255, 255)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="55" width="200" height="50">
+      <content textType="title" fontFamily="思源宋体" fontSize="32" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>目录</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="105" width="200" height="20">
+      <content textType="caption" fontFamily="思源宋体" fontSize="12" color="rgba(150,150,150,1)" textAlign="left">
+        <p>CONTENTS</p>
+      </content>
+    </shape>
+    <line startX="80" startY="135" endX="880" endY="135">
+      <border color="rgb(123, 37, 50)" width="2"/>
+    </line>
+
+    <shape type="text" topLeftX="80" topLeftY="165" width="50" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="30" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>01</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="140" topLeftY="165" width="320" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="18" color="rgba(45,45,45,1)" textAlign="left" bold="true">
+        <p>研究背景与意义</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="140" topLeftY="200" width="320" height="20">
+      <content textType="caption" fontFamily="思源宋体" fontSize="11" color="rgba(120,120,120,1)" textAlign="left">
+        <p>工业知识检索痛点与智能问答应用价值</p>
+      </content>
+    </shape>
+    <line startX="80" startY="240" endX="460" endY="240">
+      <border color="rgb(220, 220, 220)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="80" topLeftY="265" width="50" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="30" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>02</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="140" topLeftY="265" width="320" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="18" color="rgba(45,45,45,1)" textAlign="left" bold="true">
+        <p>系统架构与技术方向</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="140" topLeftY="300" width="320" height="20">
+      <content textType="caption" fontFamily="思源宋体" fontSize="11" color="rgba(120,120,120,1)" textAlign="left">
+        <p>B/S三层架构与四个课程技术方向映射</p>
+      </content>
+    </shape>
+    <line startX="80" startY="340" endX="460" endY="340">
+      <border color="rgb(220, 220, 220)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="80" topLeftY="365" width="50" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="30" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>03</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="140" topLeftY="365" width="320" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="18" color="rgba(45,45,45,1)" textAlign="left" bold="true">
+        <p>数据资源构建</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="140" topLeftY="400" width="320" height="20">
+      <content textType="caption" fontFamily="思源宋体" fontSize="11" color="rgba(120,120,120,1)" textAlign="left">
+        <p>PANDAX数据集预处理与双索引构建</p>
+      </content>
+    </shape>
+    <line startX="80" startY="440" endX="460" endY="440">
+      <border color="rgb(220, 220, 220)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="500" topLeftY="165" width="50" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="30" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>04</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="165" width="320" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="18" color="rgba(45,45,45,1)" textAlign="left" bold="true">
+        <p>系统实现</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="200" width="320" height="20">
+      <content textType="caption" fontFamily="思源宋体" fontSize="11" color="rgba(120,120,120,1)" textAlign="left">
+        <p>前端界面、后端API、数据库与多路召回算法</p>
+      </content>
+    </shape>
+    <line startX="500" startY="240" endX="880" endY="240">
+      <border color="rgb(220, 220, 220)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="500" topLeftY="265" width="50" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="30" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>05</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="265" width="320" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="18" color="rgba(45,45,45,1)" textAlign="left" bold="true">
+        <p>测试与AI使用披露</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="300" width="320" height="20">
+      <content textType="caption" fontFamily="思源宋体" fontSize="11" color="rgba(120,120,120,1)" textAlign="left">
+        <p>自动化测试结果与Vibe Coding实践披露</p>
+      </content>
+    </shape>
+    <line startX="500" startY="340" endX="880" endY="340">
+      <border color="rgb(220, 220, 220)" width="1"/>
+    </line>
+
+    <shape type="text" topLeftX="500" topLeftY="365" width="50" height="45">
+      <content textType="headline" fontFamily="思源宋体" fontSize="30" color="rgba(123,37,50,1)" textAlign="left" bold="true">
+        <p>06</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="365" width="320" height="30">
+      <content textType="body" fontFamily="思源宋体" fontSize="18" color="rgba(45,45,45,1)" textAlign="left" bold="true">
+        <p>总结与展望</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="400" width="320" height="20">
+      <content textType="caption" fontFamily="思源宋体" fontSize="11" color="rgba(120,120,120,1)" textAlign="left">
+        <p>项目成果总结、创新点与后续改进方向</p>
+      </content>
+    </shape>
+    <line startX="500" startY="440" endX="880" endY="440">
+      <border color="rgb(220, 220, 220)" width="1"/>
+    </line>
+  </data>
+  <note>
+    <content textType="body">
+      <p>本次汇报共分为六个部分：首先介绍研究背景与意义，然后阐述系统架构与技术方向映射，接着说明数据资源构建过程，第四部分详细介绍系统实现，包括前端、后端、数据库和算法模块，第五部分展示测试结果并披露AI使用情况，最后进行总结与展望。</p>
+    </content>
+  </note>
+</slide>
